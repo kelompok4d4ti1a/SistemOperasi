@@ -14,7 +14,17 @@ Frekuensi adalah ukuran jumlah putaran ulang per peristiwa dalam satuan detik de
 Untuk menghitung frekuensi, seseorang menetapkan jarak waktu, menghitung jumlah kejadian peristiwa, dan membagi hitungan ini dengan panjang jarak waktu. Pada Sistem Satuan Internasional, hasil perhitungan ini dinyatakan dalam satuan hertz (Hz) yaitu nama pakar fisika Jerman Heinrich Rudolf Hertz yang menemukan fenomena ini pertama kali. Frekuensi sebesar 1 Hz menyatakan peristiwa yang terjadi satu kali per detik.
 \section {Frekuensi Serial}
 Pada frekuensi serial, setiap saat hanya dibutuhkan 1 bit data yang akan dikirim. Dengan kata lain, bit data akan dikirim satu per satu. frekuensi ini memiliki keuntungan yang hanya membutuhkan satu jalur dan beberapa kabel dibandingkan dengan komunikasi paralel. Pada prinsipnya frekuensi serial adalah frekuensi di mana transmisi data dilakukan per bit sehingga lebih lambat daripada frekuensi paralel, atau dengan kata lain frekuensi serial adalah salah satu metode komunikasi data dimana hanya satu bit data yang dikirimkan melalui seutas kabel pada waktu tertentu.
+<<<<<<< HEAD
 
 \section {ada 2 jenis}
 Komunikasi serial terdiri dari dua jenis, serial serial dan sinkron asynchronous. Serial sinkron adalah komunikasi di mana hanya ada satu pihak (pengirim atau penerima) yang menghasilkan jam dan mengirim jam bersama dengan data. Contoh penggunaan serial sinkron ada pada transmisi data keyboard. Asynchronous serial adalah komunikasi di mana kedua pihak (pengirim dan penerima) masing-masing menghasilkan clock tetapi hanya data yang ditransmisikan, tanpa jam. Agar data yang akan ditransmisikan menjadi sama dengan data yang diterima, kedua frekuensi clock harus sama dan harus disinkronkan. Setelah sinkronisasi, pengirim akan mengirim data sesuai dengan frekuensi jam pengirim dan penerima akan membaca data sesuai dengan frekuensi jam penerima. Contoh penggunaan serial asynchronous adalah pada Universal Asynchronous Receiver Transmitter (UART) yang digunakan pada komputer port serial (COM)
 
+=======
+\section {serial mode}
+Mode serial memerlukan sinkronisasi atau penyesuaian yang berfungsi untuk:
+\subsection {fungsi sinkronisasi}
+Mengetahui kapan sinyal yang diterimanya adalah sedikit data (bit sinkronisasi)
+Mengetahui kapan sinyal yang diterimanya membentuk karakter (sinkronisasi karakter)
+Mengetahui kapan sinyal yang diterimanya membentuk blok data (memblokir sinkronisasi)
+Selanjutnya, transmisi serial dapat mengambil bentuk dua jenis, yaitu transmisi serial sinkron (sinkron) dan transmisi serial asynchronous (asynchronous). Berikut ini adalah penjelasan dari masing-masing jenis transmisi serial. Transmisi Serial Sinkron.
+>>>>>>> da5ec7e8faaa61dff7bd70ec0b7ddb225ceb48f7
