@@ -44,5 +44,10 @@ kanal paralel, hal ini disebabkan karena:
 1. Dari Segi perangkat keras: adanya proses konversi data pararel menjadi serial atau sebaliknya menggunakan piranti tambahan yang disebut UART (Universal Asynchronous Receiver/Transmitte) dan
 2. Dari Segi perangkat lunak: lebih banyak register yang digunakan atau terlibat
 Namun di sisi lain antarmuka kanal serial menawarkan berapa kelebihan dibandingkan secara paralel, antara lain:
+
+
 1. Kabel untuk komunikasi serial bisa lebih panjang dibandingkan dengan paralel; data-data dalam komunikasi serial dikirim-kan untuk logika ‘1’ sebagai tegangan -3 s/d -25 volt dan untuk logika ‘0’ sebagai tegangan +3 s/d +25 volt, dengan demikian tegangan dalam komunikasi serial memiliki ayunan tegangan maksimum 50 volt, sedangkan pada komunikasi paralel hanya 5 volt. Hal ini menyebabkan gangguan pada kabel-kabel panjang lebih mudah diatasi dibandingkan pada parallel.
+15:35 ONI Banyak mikrokontroler yang Namun pada masing-masing komputer dengan komunikasi serial harus dibayar “biaya” antarmuka serial yang agak lebih mahal.
+3. Banyaknya piranti saat ini (palmtop, organizer, hand-phone dan lainlain) menggunakan teknologi infra merah untuk komunikasi data, dalam hal ini pengiriman datanya dilakukan secara serial. IrDA-1 (spesifikasi infra merah pertama) mampu mengirimkan data dengan laju 115,2 kbps
+15:35 ONI dan Konsep Komunikasi Serial 2 dibantu dengan piranti UART, hanya panjang pulsa berkurang menjadi 3/16 dari standar RS-232 untuk menghemat daya.
 
