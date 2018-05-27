@@ -114,9 +114,17 @@ Namun saat ini penggunaan port serial sebagain besar sudah digantikan oleh jenis
 =======
 >>>>>>> 3fc5fab8ee52b853c5c2af711c1a02eb8ae20252
 
-\section { Karakteristik Sinyal Serial Port}
+\section{Karakteristik Sinyal Serial Port}
 Standar sinyal komunikasi serial yang paling umum digunakan adalah standar RS232. Standar ini hanya melibatkan komunikasi data antara komputer (Data Terminal Equipment - DTE) dengan komputer - peralatan bantu (Data Circuit - Terminating Equipment - DCE). Standarad RS232 umumnya digunakan pada port serial IBM PC Compatible.
-\subsection{ level standart sinyal }
+\subsection{level standart sinyal }
 a. Logika '1' disebut 'mark' yang terletak antara -3 volt hingga -25 volt.
 b. Logika '0' disebut 'ruang' yang terletak di antara +3 volt hingga +25 volt.
 Area tegangan antara -3 volt hingga +3 volt adalah level yang tidak valid, yaitu area voltase yang tidak memiliki level logika harus dihindari. Demikian pula tingkat tegangan negatif -25 volt atau lebih positif dari +25 volt juga harus dihindari karena dapat merusak driver garis pada jalur RS232.
+
+\section{Konfigurasi serial port}
+Untuk dapat menggunakan port serial
+itu. Biasanya tersedia dua port serial pada CPU, yaitu COM1 dan COM2. Mendasarkan
+Alamat COM1 biasanya 1016 (3F8h) dan COM2 biasanya 760 (2F8h). Alamat
+adalah alamat biasa, tergantung pada komputer yang tepat milik kita
+dapat melihat di peta memori, yaitu memori
+0000.0400h untuk COM1 dan 0000.0402h untuk COM2.
