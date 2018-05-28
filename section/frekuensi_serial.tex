@@ -134,15 +134,18 @@ Dibandingkan dengan menggunakan port parallel penggunaan port serial terkesan le
 \section 2. Dubutuhkan jumlah kabel yang sedikit, bisa hanya menggunakan 3 kabel yaitu saluran Transmit Data, saluran Receive Data, dan saluran Ground (Konfigurasi Null Modem 
   \subsection 3. Saat ini penggunaan mikrokontroller semakin populer. Kebanyakan mikrokontroller sudah dilengkapi dengan SCI (Serial Communication Interface) yang dapat digunakan untuk komunikasi dengan port serial komputer
 
- \section {UART Universal Asincrhounus Recivier transmiter}
- UART atau Universal Asynchronous Receiver-Transmitter adalah perangkat keras komputer yang menerjemahkan antara bit data paralel dan bit serial. UART biasanya merupakan rangkaian terintegrasi yang digunakan untuk komunikasi serial pada komputer atau perangkat periferal port serial. UART sekarang termasuk dalam beberapa mikrokontroler (misalnya, PIC16F628).
-
-\subsection {Komponen chip UART}
-komponen chip UART yang khas adalah sebagai berikut 
-Chip UART biasanya terdiri dari:
-· Transmit / Terima buffer
-· Mengirim / Menerima kontrol
-· Buffer Data Bus
-· Baca / Tulis Logika Penuh
-· Modem Penuh
-
+<<<<<<< HEAD
+ 
+=======
+ \section UART(Universal Asincrhounus Recivier transmiter)
+UART atau Universal Asynchronous Receiver-Transmitter adalah bagian perangkat keras komputer yang menerjemahkan antara bit-bit paralel data dan bit-bit serial. UART biasanya berupa sirkuit terintegrasi yang digunakan untuk komunikasi serial pada komputer atau port serial perangkat periperal. UART sekarang ini termasuk di dalam beberapa mikrokontroler (contohnya, PIC16F628).
+Komponen keping UART tipikal
+Keping UART biasanya terdiri dari:
+·         Penyangga (buffer) Transmit/Receive 
+·         Pengendali (control) Transmit/Receive 
+·         Penyangga Bus Data 
+·         Logika Kendali Read/Write 
+·         Kendali Modem 
+>>>>>>> 253ba8571fcc632a051bb2db2e5a2f851f3018e8
+\section {Penjelasan UART}
+UART atau Universal Asynchronous Receiver Transmitter adalah protokol komunikasi yang umum digunakan untuk mentransmisikan data serial antar perangkat satu dengan lainnya. Misalnya komunikasi antar sesama mikrokontroler atau mikrokontroler ke PC. Dalam transmisi data, jam antara pengirim dan penerima harus sama karena paket data dikirim setiap bit bergantung pada jam. Ini adalah salah satu keuntungan dari model asynchronous dalam transmisi data karena hanya dengan satu kabel transmisi data dapat ditransmisikan. Berbeda dengan model sinkron yang terdapat dalam protokol SPI (Serial Peripheral Interface) dan I2C (Inter-Integrated Circuit) karena protokolnya membutuhkan setidaknya dua kabel dalam transmisi data, yaitu clock dan transmisi data. Namun kelemahan model asynchronous adalah dalam hal kecepatan dan jarak transmisi. Karena transmisi jarak yang lebih cepat dan jauh membuat paket data bit menjadi terdistorsi sehingga data yang dikirim atau diterima dapat memiliki kesalahan.
